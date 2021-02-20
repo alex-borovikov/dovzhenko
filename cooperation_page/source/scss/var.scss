@@ -1,0 +1,120 @@
+.flex{
+    display: flex;
+}
+.flex_item{
+    flex: 1 0 50%;
+}
+@mixin o_hidden{
+    overflow: hidden;
+}
+@mixin back {
+    background: url("../img/bg_main.jpg") 0 0 / cover no-repeat;
+    background-color: #291666;
+    background-blend-mode: luminosity;
+}
+@mixin big_title {
+    font-size: 4.28em;
+    text-decoration-line: line-through;
+    transform: translateY(10px);
+}
+@mixin image{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.flex_kit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full_screen{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.just_cont_sb{
+    justify-content: space-between;
+}
+.just_cont_c{
+    justify-content: center;
+}
+.align_items_center{
+    align-items: center;
+}
+
+p.fw_bold,
+h2.fw_bold,
+a.fw_bold{
+    font-weight: 800;
+}
+a.def_color,
+p.def_color,
+h2.def_color,
+h3.def_color,
+span.def_color{
+    color: #fff;
+}
+a.project_color,
+p.project_color,
+h2.project_color{
+    color: #D3AB27 !important;
+}
+.main_color,
+a.main_color{
+    color: #E1CB82;
+}
+.wspace{
+    white-space: nowrap;
+}
+.project_color_back{
+    background-color: #D3AB27;
+}
+.ff_gilroy,
+p.ff_gilroy,
+a.ff_gilroy{
+    font-family: 'Gilroy-Regular',sans-serif;
+}
+.ff_gilroy_light,
+a.ff_gilroy_light{
+    font-family: 'Gilroy-Thin', sans-serif;
+}
+.ff_gilroy_i{
+    font-family: 'Gilroy-LightItalic', sans-serif;
+}
+.ff_forum,
+h2.ff_forum{
+    font-family: 'Forum-Regular', sans-serif;
+}
+.ff_tenor{
+    font-family: 'TenorSans-Regular', sans-serif;
+}
+.tt_upper,
+a.tt_upper{
+    text-transform: uppercase;
+}
+.tt_decor,
+a.tt_decor{
+    text-decoration: underline;
+}
+
+.fsz_title{
+    font-size: 1.142em;
+}
+
+.nodisplay{
+    display: none;
+}
+.display{
+    display: block;
+}
+
+.input_error{
+    color: #FF3E3E !important;
+    border-bottom: 1px solid rgba(255, 62, 62, 0.8) !important;
+}
+.input_error::placeholder{
+    color: #FF3E3E !important;
+}

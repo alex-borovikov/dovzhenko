@@ -1,0 +1,367 @@
+@media (max-width: 1500px){
+    .header__container{
+        padding: 0 60px;
+    }
+
+
+}
+//1400px
+@media (max-width: 1400px){
+    ._container{
+        max-width: 900px;
+    }
+    .swiper-slide-about{
+        padding: 0 15px 0 0;
+    }
+    .container,
+    .cooperation-header .cooperation-header_title{
+        padding: 0px 90px;
+    }
+    .rent .rent-content .rent-content__hall .rent-content__hall-additional .hall-additional__feature{
+        padding: 8px 0;
+    }
+    .cooperation-header .cooperation-header_title h1{
+        font-size: 3.3em;
+    }
+    .cooperation-body .rent{
+        padding-top: 30px;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-name{
+        margin: 25px 0;
+    }
+    .cooperation-body .rent-form .rent-form__item{
+        margin-bottom: 20px;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-img{
+        max-width: 440px;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-img img{
+        max-height: 230px;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-name span{
+        font-size: 2.3em;
+    }
+    .cooperation-footer .footer-nav{
+        padding: 12px 0;
+    }
+}
+//1200px
+@media (max-width: 1200px){
+    ._container{
+        max-width: 800px;
+    }
+
+    .cooperation-header .cooperation-header_title h1{
+        font-size: 3em;
+    }
+
+}
+@media (max-width: 1024px){
+    .header__nav,
+    .header__lang,
+    .slider__social,
+    .slide_main__type{
+        display: none;
+    }
+    .burger__window .burger__window-nav ul li a{
+        font-size: 1.4em;
+    }
+    ._container{
+        max-width: 100%;
+    }
+
+    .footer .footer-nav{
+        padding: 20px 60px;
+    }
+    .header__burger{
+        display: block;
+    }
+    .header__content{
+        align-items: flex-end;
+    }
+    .cooperation-footer .footer-nav{
+        padding: 22px 90px;
+    }
+}
+@media (max-width: 992px){
+    .rent .rent-content .rent-content__hall .rent-content__hall-additional .hall-additional__feature{
+        padding: 6px 0;
+    }
+    .rent .rent-content .rent-content__hall .rent-content__hall-additional .hall-additional__feature .hall-additional__feature-item span,
+    .rent .rent-content .rent-content__hall .rent-content__hall-additional .hall-additional__title .hall-additional__title-header span{
+        font-size: .9em;
+    }
+    .cooperation-header .cooperation-header_title h1{
+        font-size: 2.5em;
+    }
+}
+@media (max-width: 768px){
+    .header__container{
+        padding: 0 60px;
+    }
+
+    .cooperation-header{
+        background-image: linear-gradient(180deg,rgba(28,12,79,.1) 0,rgba(28,12,81,.4) 33.65%,rgba(37,20,71,.8) 100%),url(../../img/cooperation/header.webp);
+        background-size: initial;
+        padding-top: 13%;
+        padding-bottom: 13%;
+    }
+    .cooperation-header .cooperation-header_title{
+        transform: translateY(60%);
+    }
+    .cooperation-header .cooperation-header_title h1{
+
+        font-size: 6vw;
+    }
+    .container, .cooperation-header .cooperation-header_title{
+        padding: 0 90px;
+    }
+    .cooperation-body .rent{
+        padding-top: 0;
+    }
+    .rent .rent-content{
+        grid-template-columns: 1fr;
+    }
+    .rent .rent-content .rent-content__hall .rent-content__hall-additional .hall-additional__feature{
+        padding: 10px 0;
+    }
+    .rent .rent-content .rent-content__hall .rent-content__hall-additional .hall-additional__feature .hall-additional__feature-item span,
+    .rent .rent-content .rent-content__hall .rent-content__hall-additional .hall-additional__title .hall-additional__title-header span{
+        font-size: 1.142em;
+    }
+    .rent .rent-content .rent-content__hall{
+        transform: translateY(-5%);
+        max-width: 100%;
+    }
+    .cooperation-body .rent-form{
+        margin-top: 76px;
+    }
+    .cooperation-footer .footer-nav{
+        display: grid;
+        grid-template:
+                "navmenu logo"
+                "copyright ." ;
+    }
+    .cooperation-footer .footer-nav{
+        padding: 15px 60px;
+    }
+    .cooperation-footer .footer-nav_copyright{
+        grid-area: copyright;
+    }
+    .cooperation-footer .footer-nav-list{
+        grid-area: navmenu;
+    }
+    .cooperation-footer .footer-nav_logo{
+        grid-area: logo;
+    }
+    .cooperation-footer .footer-nav .list_item{
+        margin-right: 5vw;
+    }
+    .cooperation-body .rent-warning{
+        width: 70vw;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-img{
+        max-width: 588px;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-img img{
+        max-height: 328px;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-name span{
+        font-size: 2.85em;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-name{
+        margin: 50px 0;
+    }
+    .cooperation-body .rent-form .rent-form__item{
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 680px){
+    .header__container{
+        padding: 0 30px;
+    }
+    .footer .footer-nav{
+        padding: 20px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .footer-nav-list{
+        order: 1
+    }
+    .footer-nav_logo{
+        order: 2;
+        margin-bottom: 23px;
+    }
+    .footer-nav_copyright{
+        order: 3;
+    }
+    .footer .footer-nav-list ul{
+        flex-direction: column;
+
+    }
+    .footer .footer-nav .footer-nav-list ul li{
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    
+    .rent .rent-content .rent-content__hall .rent-content__hall-additional .hall-additional__feature{
+        padding: 8px 0;
+    }
+
+    .cooperation-footer .footer-nav_logo{
+        margin-bottom: 0;
+    }
+    .cooperation-footer .footer-nav_copyright{
+        margin-top: 25px;
+    }
+}
+@media (max-width: 580px){
+    .rent .rent-content .rent-content__hall .rent-content__hall-additional .hall-additional__feature{
+        padding: 6px 0;
+    }
+    .container,.cooperation-header .cooperation-header_title{
+        padding: 0 30px;
+    }
+
+    .cooperation-body .rent-form{
+        margin-top: 51px;
+    }
+    .cooperation-body .rent{
+        margin-top: 0;
+    }
+    
+}
+@media (max-width: 490px){
+    .container,
+    .cooperation-header .cooperation-header_title{
+        padding: 0px 30px;
+        position: static;
+    }
+    .cooperation-header{
+        padding-top: 0;
+        padding-bottom: 0;
+
+        display: flex;
+        align-items: flex-end;
+        height: 145px;
+        background-image: linear-gradient(180deg,rgba(28,12,79,.1) 0,rgba(28,12,81,.4) 33.65%,rgba(37,20,71,.8) 100%),url(../../img/cooperation/header_480.webp);
+    }
+    .cooperation-header .cooperation-container{
+        min-width: 100%;
+    }
+    .cooperation-header .cooperation-header_title{
+        max-width: 260px;
+        transform: translateY(0);
+    }
+    .cooperation-header .cooperation-header_title h1{
+
+        font-size: 2.2em;
+
+    }
+    .cooperation-container{
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 0 0 0;
+    }
+    .rent .rent-content .rent-content__hall{
+        transform: translateY(0%);
+        padding-top: 0;
+        margin-top: 50px;
+    }
+    .cooperation-body .rent-form{
+        margin-top: 50px;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-name span{
+        font-size: 2em;
+    }
+    .cooperation-footer{
+        margin-top: 30px;
+    }
+    .cooperation-footer .footer-nav{
+        padding: 15px 30px;
+        grid-template:
+                'navmenu'
+                'logo'
+                'copyright';
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .cooperation-footer .footer-nav-list ul{
+        flex-direction: column;
+    }
+    .cooperation-footer .footer-nav .list_item{
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .cooperation-body .rent-warning{
+        width: 80vw;
+        height: 26vh;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-name span{
+        font-size: 1.85em;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-img{
+        max-width: 390px;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-img img{
+        max-height: 200px;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-name{
+        margin: 25px 0;
+    }
+    .cooperation-body .rent-form .rent-form__item{
+        margin-bottom: 40px;
+    }
+    .cooperation-body .rent-form .rent-form__item:nth-child(4){
+        margin-bottom: 31px;
+    }
+
+}
+@media (max-width: 380px){
+    .rent .rent-content .rent-content__hall .rent-content__hall-additional .hall-additional__feature .hall-additional__feature-item span, .rent             .rent-content .rent-content__hall .rent-content__hall-additional .hall-additional__title .hall-additional__title-header span{
+        font-size: .9em;
+    }
+    .rent .rent-content .rent-content__hall .rent-content__hall-info .hall-info__main .hall-info__main-title span{
+        font-size: 2em;
+    }
+    .rent .rent-content .rent-content__hall .rent-content__hall-info .hall-info__description p, .rent .rent-content .rent-content__hall .rent-content__hall-info .hall-info__details span{
+        font-size: .9em;
+    }
+    .cooperation-body .rent-form .rent-form__header .form-hall-img img{
+        max-height: 160px;
+    }
+}
+
+//@media (max-height: 920px){
+//    .cooperation-body .rent{
+//        padding-top: 25px;
+//    }
+//    .cooperation-body .rent-form .rent-form__header .form-hall-name{
+//        margin: 20px 0;
+//    }
+//    .cooperation-body .rent-form .rent-form__item{
+//        margin-bottom: 25px;
+//    }
+//    .cooperation-body .rent-form .rent-form__header .form-hall-name span{
+//        font-size: 2.4em;
+//    }
+//    //.cooperation-body .rent-form .rent-form__container{
+//    //    width: 440px;
+//    //}
+//    .cooperation-body .rent-form .rent-form__header .form-hall-img{
+//        padding-bottom: 50%;
+//    }
+//    .cooperation-footer .footer-nav{
+//        padding: 15px 30px;
+//    }
+//}
+//@media (max-height: 668px){
+//    .cooperation-body .rent-form .rent-form__header .form-hall-name span{
+//        font-size: 2em;
+//    }
+//
+//}
+
+
+

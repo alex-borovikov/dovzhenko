@@ -1,0 +1,85 @@
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    .footer-wrapper{
+        .footer-contacts{
+
+            .footer-contacts_item {
+                text-align: center;
+                justify-content: center;
+                margin-bottom: 47px;
+                @include o_hidden;
+
+                h3{
+                    font-size: 1.285em;
+                    line-height: 1.166em;
+                    color: rgba(255, 237, 179, 0.7);
+                    @include prepareToAnim;
+                }
+                p, a{
+                    font-weight: 500;
+                    color: #FFEDB3;
+                    font-style: italic;
+                }
+                p{
+                    @include prepareToAnim;
+                }
+
+            }
+            .footer-contacts_item a svg path{
+                transition: fill .3s linear;
+            }
+            .footer-contacts_item a svg:hover path{
+                fill: #D3AB27;
+            }
+            .footer-contacts_item:last-child{
+                margin-bottom: 64px;
+            }
+            .footer-contacts_item-address h3{
+                margin-bottom: 7px;
+            }
+            .footer-contacts_item-schelude h3,
+            .footer-contacts_item-tel h3{
+                margin-bottom: 12px;
+            }
+
+            .footer-contacts_item-mail h3{
+                margin-bottom: 9px;
+            }
+            .footer-contacts_item{
+
+                a{
+                    margin-right: 23px;
+                }
+                a:last-child{
+                    margin-right: 0;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+            .footer-contacts_item-addres p a,
+            .footer-contacts_item-mail p a{
+                font-size: 18px;
+            }
+
+        }
+    }
+    .footer-nav{
+        padding: 20px 0;
+        justify-content: space-between;
+        align-items: center;
+        .footer-nav-list{
+            ul{
+                li{
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+
+}

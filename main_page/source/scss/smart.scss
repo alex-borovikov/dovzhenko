@@ -1,0 +1,33 @@
+.smart-container{
+    @include o_hidden;
+}
+.smart-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+.smart-tape{
+    display: flex;
+    position: relative;
+
+    width: 100%;
+    transition: transform .5s;
+}
+.smart-slide{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.smart-nav{
+    margin-top: 80px;
+}
+.smart-nav-prev,
+.smart-nav-next{
+    cursor: pointer;
+}
+.smart-nav-prev{
+    margin-right: 15px;
+}
+.smart-nav-next{
+    margin-left: 15px;
+}

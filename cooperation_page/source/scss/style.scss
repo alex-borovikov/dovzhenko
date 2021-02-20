@@ -1,0 +1,69 @@
+@import 'swiper.scss';
+@import 'null';
+@mixin font($font_name, $file_name, $weight, $style) {
+    
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../../fonts/#{$file_name}.woff") format("woff"), url("../../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+@import 'fonts';
+@import 'var';
+:root{
+    --padding-nav-desktop: 160px;
+    --padding-nav-mobile: 80px;
+}
+body{
+    font-family: Arial,Helvetica Neue, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    background-color: #291666;
+}
+._container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+._lock{
+    @include o_hidden;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.wrapper{
+    position: relative;
+    max-width: 100vw;
+    min-height: 100vh;
+    @include o_hidden;
+    
+}
+._blur{
+    filter: blur(10px);
+}
+.ibg{
+    background-position: center;
+    background-size: cover!important;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.ibg .ibg_img{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+@import 'header';
+@import 'burger';
+@import 'burger_window';
+@import 'cooperation';
+@import 'media';

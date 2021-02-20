@@ -1,0 +1,47 @@
+.header__burger{
+    display: none;
+
+
+    
+    .burger__close{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        cursor: pointer;
+        span{
+            position: absolute;
+            display: inline-block;
+            width: 30px;
+            height: 2px;
+            background: #fff;
+            transition: .3s;
+        }
+        span:first-child{
+            top: 0;
+        }
+        span:nth-child(2){
+            top: 10px;
+        }
+        span:last-child{
+            top: 20px;
+        }
+    }
+    ._open span:first-child{
+        top: 10px;
+        transform: rotate(45deg) ;
+    }
+    ._open span:nth-child(2){
+        display: none;
+    }
+    ._open span:last-child{
+        top: 10px;
+        transform: rotate(-45deg);
+    }
+}
+
+@media (max-width: 1000px){
+    .header__burger{
+        display: block;
+    }
+}

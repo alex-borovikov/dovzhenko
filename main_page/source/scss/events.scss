@@ -1,0 +1,146 @@
+.events-wrapper{
+    @include back;
+
+    .events{
+        position: relative;
+        z-index: 4;
+        overflow: hidden;
+        padding-bottom: 87px;
+        .events_line, .events_header .events_header_title{
+            transform: translateX(-100%);
+            transition: transform 1s linear;
+        }
+        .events-content_wrapper{
+            padding: 0 30px;
+        }
+        .events_header{
+            padding-top: 77px;
+            position: relative;
+
+
+            .events_header_title{
+                transition: transform .3s cubic-bezier(.075,.82,.165,1);
+            }
+            .events_header_title h2{
+               @include big_title;
+            }
+        }
+        .events__content{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+            margin-top: 71.5px;
+
+
+            .events__item{
+                margin-bottom: 30px;
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: 350px;
+                max-height: 350px;
+                background-size: cover !important;
+
+
+                .events__item-info__type img{
+                    max-height: 25px;
+                    max-width: 100%;
+                }
+
+                .events__item-info{
+                    position: relative;
+                    height: 100%;
+                    padding: 21px 25px 28px 25px;
+
+                    .events__item-info__type img{
+                        max-width: 100%;
+                    }
+                    .events__item-info__title{
+                        position: absolute;
+                        bottom: 60px;
+                    }
+                    .events__item-info__title h2{
+                        color: #C7B372;
+                        font-size: 2.28em;
+                        line-height: 1.17em;
+
+                        text-transform: uppercase;
+                    }
+                    .events__item-info__date{
+                        position: absolute;
+                        bottom: 27px;
+                        margin-top: 9px;
+                    }
+                    .events__item-info__date span{
+                        font-size: 1.42em;
+                        line-height: 1.15em;
+                    }
+                }
+
+
+
+                .events__item-additional{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(37, 20, 71, 0.95);
+                    padding: 20px 27px 27px 27px;
+                    transition: transform .3s linear;
+                    transform: translateY(100%);
+
+                    .events__item-additional__type{
+                        margin-bottom: 20px;
+                    }
+                    .events__item-additional__type h2{
+                        font-size: 1.166em;
+                        line-height: 1.285em;
+                    }
+                    .events__item-additional__discription {
+
+                    }
+                    .events__item-additional__discription p{
+                        font-size: 1em;
+                        line-height: 1.142em;
+                    }
+                    //152
+                    .events__item-additional-link{
+                        position: absolute;
+                        width: 100%;
+                        bottom: 0;
+                        margin: 0px 25px 25px 0;
+                        .events__item-additional__line{
+                            margin-bottom: 25px;
+                            width: calc(100% - 54px);
+                            height: 1px;
+                            background-color: rgba(255, 255, 255, 0.3);
+                        }
+                        .events__item-additional__redirect a{
+                            font-size: 1.285em;
+                            transition: color .3s ease;
+                        }
+                        .events__item-additional__redirect a:hover{
+                            color: #D3AB27;
+                        }
+                        .events__item-additional__redirect a.no-ticket{
+                            pointer-events: none;
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+
+                }
+                &:hover .events__item-additional{
+                    transform: translateY(0%);
+                }
+            }
+            .events__item:nth-child(3n+3){
+                margin-right: 0;
+            }
+        }
+
+    }
+
+
+}

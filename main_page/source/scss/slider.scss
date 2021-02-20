@@ -1,0 +1,211 @@
+.slider-main{
+
+    .slide__container{
+        position: relative;
+        height: 100vh;
+
+        .slide_main__content-wrapper{
+            padding: 0 30px;
+            height: 100%;
+        }
+
+        .slide_main__content{
+            position: relative;
+            top: 28.57vh;
+            z-index: 3;
+
+            .slide_main__content-type{
+                margin-bottom: 94px;
+            }
+            .slide_main__content-type img{
+                max-width: 554px;
+            }
+        }
+
+        .slider_content{
+            max-width: 1720px;
+        }
+
+        .slide_back-image{
+            position: relative;
+            max-height: 100vh;
+            &:before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                top: 0;
+                left: 0;
+                background: linear-gradient(180deg, #291666 0%, rgba(42, 21, 94, 0.5) 100%);
+            }
+        }
+
+
+    }
+    //Slide main
+    .slide_main{
+        position: absolute;
+        max-width: 1720px;
+        padding: 0 30px;
+        width: 100%;
+        top: 28.57vh;
+        left: 50%;
+        transform: translateX(-50%);
+
+
+
+        .slider__social{
+            margin: 0 0 0 auto;
+        }
+        .slide_main__type img{
+            max-height: 39.571em;
+        }
+
+        .slider__social-link{
+            justify-self: flex-end;
+        }
+        .slider__social-link:first-child{
+            margin-bottom: 25px;
+        }
+        .slider__social-link a svg path{
+            transition: fill .3s linear;
+        }
+        .slider__social-link a svg:hover path{
+            fill: #D3AB27;
+        }
+
+    }
+
+
+    .slide_main__content{
+
+        .slide_main__content-text{
+
+            .content-text__date,
+            .content-text__title,
+            .content-text__discription{
+                overflow: hidden;
+            }
+            .content-text__date span,
+            .content-text__title h2,
+            .content-text__discription p{
+                transition: transform .6s ease;
+                //transition: transform .4s ease;
+                //transition: transform .6s cubic-bezier(.15,.14,.4,1.4);
+                transform: translateY(101%);
+            }
+
+            .content-text__date{
+                padding: 0;
+                margin: 0;
+                user-select: text!important;
+            }
+            .content-text__date span{
+                display: inline-block;
+                font-weight: 300;
+                font-size: 2em;
+                user-select: text!important;
+
+            }
+            .content-text__title{
+                max-width: 43em;
+                margin: 51px 0 41px 0;
+            }
+            .content-text__title h2{
+                font-size: 5.714em;
+                line-height: 1.175em;
+                font-weight: 300;
+                text-transform: uppercase;
+                color: #E1CB82;
+
+            }
+            .content-text__discription p{
+                font-size: 1.57em;
+                line-height: 1.181em;
+                max-width: 500px;
+            }
+            .content-text__redirect-button{
+                //margin-top: 200px;
+                position: absolute;
+                bottom: 0;
+
+            }
+            .content-text__redirect-button a{
+                font-size: 1.85em;
+                font-style: normal;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                text-decoration: underline;
+                color: #E1CB82;
+                text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                opacity: 0;
+                transition: opacity 1s cubic-bezier(.12,.52,.81,1.07);
+
+            }
+            .content-text__redirect-button a.no-ticket{
+                text-decoration: none;
+                color: white;
+                pointer-events: none;
+            }
+            .content-text__redirect-button a:hover{
+                color: #D3AB27;
+            }
+
+        }
+
+    }
+    // Slide main END
+
+    //Slider NAv
+    .slider__nav{
+        justify-content: center;
+        align-items: flex-end;
+        position: absolute;
+        z-index: 3;
+        right: 7.031vw;
+        opacity: 0;
+        transition: .4s;
+    }
+
+    //Pagination
+    .swiper-pagination{
+        position: relative !important;
+        display: flex;
+        align-items: center;
+
+    }
+    .pagination__line{
+        display: inline-block;
+        width: 2px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.7) !important;
+        margin-right: 2.916vw;
+        border-radius: 0 !important;
+    }
+    .pagination__line:last-child{
+        margin: 0;
+    }
+    .pagination__line.swiper-pagination-bullet-active{
+        height: 24px;
+        width: 2.5px;
+        color: #fff;
+    }
+
+    //Pagination END
+    // Slide Arrows
+    .swiper__next,
+    .swiper__prev{
+        cursor: pointer;
+    }
+    .swiper__prev{
+        margin-right: 5.208vw;
+    }
+    .swiper__prev svg path:hover{
+        fill-opacity: 1;
+    }
+    .swiper__next{
+        margin-left: 5.208vw;
+    }
+    //Slider NAv END
+
+}
